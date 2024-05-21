@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mengatur lebar kolom agar foto dapat menyesuaikan ukuran container */
+    grid-gap: 10px; /* Jarak antar foto */
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto; /* Lebar foto disesuaikan dengan lebar parent */
+    object-fit: cover;
+}
